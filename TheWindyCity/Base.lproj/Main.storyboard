@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Menu View Controller-->
+        <!--Start View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MenuViewController" customModule="TheWindyCity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="StartViewController" customModule="TheWindyCity" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -22,13 +22,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="iRy-cu-7jv">
-                                <rect key="frame" x="-8" y="8" width="510" height="51"/>
+                                <rect key="frame" x="-8" y="8" width="139" height="223"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="-2" translatesAutoresizingMaskIntoConstraints="NO" id="esm-bB-CIJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="135" height="51"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="-2" translatesAutoresizingMaskIntoConstraints="NO" id="esm-bB-CIJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="139" height="51"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJi-SW-N8C">
-                                                <rect key="frame" x="0.0" y="0.0" width="36" height="51"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJi-SW-N8C">
+                                                <rect key="frame" x="0.0" y="0.0" width="139" height="27"/>
                                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="20"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -37,6 +37,10 @@
                                                 </variation>
                                                 <variation key="widthClass=compact">
                                                     <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="18"/>
+                                                </variation>
+                                                <variation key="widthClass=regular" ambiguous="YES">
+                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="37"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="189" height="49"/>
                                                 </variation>
                                                 <variation key="heightClass=compact-widthClass=compact">
                                                     <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="20"/>
@@ -47,9 +51,12 @@
                                                 <variation key="heightClass=regular-widthClass=compact">
                                                     <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="27"/>
                                                 </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="34"/>
+                                                </variation>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Adventures" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UnK-hX-ZAT">
-                                                <rect key="frame" x="33" y="0.0" width="102" height="51"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Adventures" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UnK-hX-ZAT">
+                                                <rect key="frame" x="0.0" y="25" width="139" height="27"/>
                                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="20"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -58,6 +65,10 @@
                                                 </variation>
                                                 <variation key="widthClass=compact">
                                                     <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="18"/>
+                                                </variation>
+                                                <variation key="widthClass=regular" ambiguous="YES">
+                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="37"/>
+                                                    <rect key="frame" x="0.0" y="47" width="189" height="49"/>
                                                 </variation>
                                                 <variation key="heightClass=compact-widthClass=compact">
                                                     <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="20"/>
@@ -68,83 +79,117 @@
                                                 <variation key="heightClass=regular-widthClass=compact">
                                                     <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="27"/>
                                                 </variation>
-                                            </label>
-                                        </subviews>
-                                        <variation key="widthClass=compact" axis="vertical"/>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="-18" translatesAutoresizingMaskIntoConstraints="NO" id="9D9-IQ-u9e">
-                                        <rect key="frame" x="145" y="0.0" width="217" height="51"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="The" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbt-ae-yAs">
-                                                <rect key="frame" x="0.0" y="0.0" width="63" height="51"/>
-                                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="39"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                                <variation key="heightClass=compact">
-                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="48"/>
-                                                </variation>
-                                                <variation key="heightClass=compact-widthClass=compact">
-                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="40"/>
-                                                </variation>
-                                                <variation key="heightClass=compact-widthClass=regular">
-                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="57"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="44"/>
-                                                </variation>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Windy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iky-Rz-GAp">
-                                                <rect key="frame" x="47" y="0.0" width="117" height="51"/>
-                                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="39"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                                <variation key="heightClass=compact">
-                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="48"/>
-                                                </variation>
-                                                <variation key="heightClass=compact-widthClass=compact">
-                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="40"/>
-                                                </variation>
-                                                <variation key="heightClass=compact-widthClass=regular">
-                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="57"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="44"/>
-                                                </variation>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="City" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CL7-Zo-06t">
-                                                <rect key="frame" x="148" y="0.0" width="69" height="51"/>
-                                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="39"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                                <variation key="heightClass=compact">
-                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="48"/>
-                                                </variation>
-                                                <variation key="heightClass=compact-widthClass=compact">
-                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="40"/>
-                                                </variation>
-                                                <variation key="heightClass=compact-widthClass=regular">
-                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="57"/>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="44"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="34"/>
                                                 </variation>
                                             </label>
                                         </subviews>
                                         <variation key="widthClass=compact" axis="vertical"/>
+                                        <variation key="widthClass=regular" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="189" height="95"/>
+                                        </variation>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="FI9-0g-tRd">
-                                        <rect key="frame" x="371" y="0.0" width="139" height="51"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="-18" translatesAutoresizingMaskIntoConstraints="NO" id="9D9-IQ-u9e">
+                                        <rect key="frame" x="0.0" y="61" width="139" height="117"/>
                                         <subviews>
-                                            <imageView opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="compass" translatesAutoresizingMaskIntoConstraints="NO" id="Mw8-6K-1fW">
-                                                <rect key="frame" x="0.0" y="0.0" width="35" height="51"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="The" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbt-ae-yAs">
+                                                <rect key="frame" x="0.0" y="0.0" width="139" height="51"/>
+                                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="39"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="48"/>
+                                                </variation>
+                                                <variation key="widthClass=regular" ambiguous="YES">
+                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="62"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="189" height="81"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="40"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="57"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="44"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="86"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Windy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iky-Rz-GAp">
+                                                <rect key="frame" x="0.0" y="33" width="139" height="51"/>
+                                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="39"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="48"/>
+                                                </variation>
+                                                <variation key="widthClass=regular" ambiguous="YES">
+                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="63"/>
+                                                    <rect key="frame" x="0.0" y="63" width="189" height="82"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="40"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="57"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="44"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="86"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="City" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CL7-Zo-06t">
+                                                <rect key="frame" x="0.0" y="66" width="139" height="51"/>
+                                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="39"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="48"/>
+                                                </variation>
+                                                <variation key="widthClass=regular" ambiguous="YES">
+                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="63"/>
+                                                    <rect key="frame" x="0.0" y="127" width="189" height="82"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="40"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="57"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="44"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="86"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <variation key="widthClass=compact" axis="vertical"/>
+                                        <variation key="widthClass=regular" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="105" width="189" height="209"/>
+                                        </variation>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="FI9-0g-tRd">
+                                        <rect key="frame" x="0.0" y="188" width="139" height="35"/>
+                                        <subviews>
+                                            <imageView opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="compass" translatesAutoresizingMaskIntoConstraints="NO" id="Mw8-6K-1fW">
+                                                <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="34" id="eQu-uq-eWg">
                                                         <variation key="heightClass=compact" constant="40"/>
+                                                        <variation key="widthClass=regular" constant="52"/>
                                                         <variation key="heightClass=compact-widthClass=regular" constant="48"/>
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="60"/>
                                                     </constraint>
                                                     <constraint firstAttribute="width" constant="14" id="f1C-ff-vl5">
                                                         <variation key="heightClass=compact" constant="20"/>
+                                                        <variation key="widthClass=regular" constant="42"/>
                                                         <variation key="heightClass=compact-widthClass=regular" constant="28"/>
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="34"/>
                                                     </constraint>
                                                 </constraints>
                                                 <variation key="default">
@@ -159,14 +204,24 @@
                                                         <include reference="f1C-ff-vl5"/>
                                                     </mask>
                                                 </variation>
+                                                <variation key="widthClass=regular" ambiguous="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="56" height="35"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="89" height="35"/>
+                                                </variation>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Chicago Illinois," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q49-ls-Qpa">
-                                                <rect key="frame" x="44" y="0.0" width="95" height="51"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Chicago Illinois," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q49-ls-Qpa">
+                                                <rect key="frame" x="44" y="0.0" width="95" height="35"/>
                                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="13"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="heightClass=compact">
                                                     <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="17"/>
+                                                </variation>
+                                                <variation key="widthClass=regular" ambiguous="YES">
+                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="17"/>
+                                                    <rect key="frame" x="65" y="0.0" width="124" height="35"/>
                                                 </variation>
                                                 <variation key="heightClass=compact-widthClass=compact">
                                                     <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="14"/>
@@ -174,16 +229,27 @@
                                                 <variation key="heightClass=compact-widthClass=regular">
                                                     <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="21"/>
                                                 </variation>
+                                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES">
+                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="22"/>
+                                                    <rect key="frame" x="98" y="0.0" width="161" height="35"/>
+                                                </variation>
                                             </label>
                                         </subviews>
+                                        <variation key="widthClass=regular" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="324" width="189" height="35"/>
+                                        </variation>
                                     </stackView>
                                 </subviews>
                                 <variation key="heightClass=compact" spacing="18"/>
                                 <variation key="widthClass=compact" axis="vertical" spacing="19"/>
+                                <variation key="widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="20" y="20" width="189" height="359"/>
+                                </variation>
                                 <variation key="heightClass=compact-widthClass=compact" spacing="18"/>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="20" y="6" width="197" height="336"/>
                                 </variation>
+                                <variation key="heightClass=regular-widthClass=regular" spacing="32"/>
                             </stackView>
                             <button alpha="0.84999999999999998" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zmY-wL-o4Y">
                                 <rect key="frame" x="134" y="469" width="332" height="85"/>
@@ -197,6 +263,7 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="332" id="4Oh-o0-Pf6"/>
                                     <constraint firstAttribute="height" constant="69" id="GN6-qM-mNR"/>
                                     <constraint firstAttribute="width" constant="261" id="HUa-Fx-FTN"/>
+                                    <constraint firstAttribute="width" constant="332" id="Lga-Wz-48F"/>
                                     <constraint firstAttribute="height" constant="99" id="N2b-oo-K3X">
                                         <variation key="heightClass=compact" constant="64"/>
                                     </constraint>
@@ -204,7 +271,12 @@
                                     <constraint firstAttribute="width" constant="332" id="SAR-oT-lWv"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="85" id="VnF-vM-rHn"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="133" id="a4G-fO-JL7"/>
+                                    <constraint firstAttribute="height" constant="177" id="byf-Ab-qoD"/>
+                                    <constraint firstAttribute="height" constant="123" id="c0k-4c-iF8"/>
                                     <constraint firstAttribute="width" constant="181" id="c6z-in-s8s"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="470" id="fus-l4-fwS"/>
+                                    <constraint firstAttribute="width" constant="470" id="hUG-q9-84u"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="123" id="lMl-Rn-BY6"/>
                                     <constraint firstAttribute="width" constant="189" id="p0U-Lv-8oU"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="pl6-ii-vr5"/>
                                     <constraint firstAttribute="height" constant="119" id="rcq-lq-ybY"/>
@@ -222,12 +294,18 @@
                                         <exclude reference="4Oh-o0-Pf6"/>
                                         <exclude reference="GN6-qM-mNR"/>
                                         <exclude reference="HUa-Fx-FTN"/>
+                                        <exclude reference="Lga-Wz-48F"/>
                                         <exclude reference="N2b-oo-K3X"/>
                                         <exclude reference="QmH-dR-GbI"/>
                                         <exclude reference="SAR-oT-lWv"/>
                                         <exclude reference="VnF-vM-rHn"/>
                                         <exclude reference="a4G-fO-JL7"/>
+                                        <exclude reference="byf-Ab-qoD"/>
+                                        <exclude reference="c0k-4c-iF8"/>
                                         <exclude reference="c6z-in-s8s"/>
+                                        <exclude reference="fus-l4-fwS"/>
+                                        <exclude reference="hUG-q9-84u"/>
+                                        <exclude reference="lMl-Rn-BY6"/>
                                         <exclude reference="p0U-Lv-8oU"/>
                                         <exclude reference="pl6-ii-vr5"/>
                                         <exclude reference="rcq-lq-ybY"/>
@@ -249,6 +327,12 @@
                                         <include reference="HUa-Fx-FTN"/>
                                         <exclude reference="N2b-oo-K3X"/>
                                         <include reference="rcq-lq-ybY"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="Lga-Wz-48F"/>
+                                        <include reference="c0k-4c-iF8"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
@@ -278,12 +362,25 @@
                                         <include reference="a4G-fO-JL7"/>
                                     </mask>
                                 </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="57"/>
+                                    <mask key="constraints">
+                                        <include reference="byf-Ab-qoD"/>
+                                        <include reference="fus-l4-fwS"/>
+                                        <include reference="hUG-q9-84u"/>
+                                        <include reference="lMl-Rn-BY6"/>
+                                    </mask>
+                                </variation>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="zmY-wL-o4Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0L0-bQ-w6C"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zmY-wL-o4Y" secondAttribute="bottom" constant="44" id="4ZJ-Io-qos"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zmY-wL-o4Y" secondAttribute="bottom" constant="25" id="BT4-xC-pWx"/>
+                            <constraint firstItem="iRy-cu-7jv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="DvA-S1-Lfc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zmY-wL-o4Y" secondAttribute="bottom" constant="32" id="FOP-DC-nTn"/>
+                            <constraint firstItem="iRy-cu-7jv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="FQi-63-MxV"/>
                             <constraint firstItem="zmY-wL-o4Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FVX-GH-g1g"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zmY-wL-o4Y" secondAttribute="bottom" constant="8" id="GtP-sU-9Gd"/>
                             <constraint firstItem="iRy-cu-7jv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-7" id="I3h-fe-VFx"/>
@@ -294,15 +391,18 @@
                             <constraint firstItem="iRy-cu-7jv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-13" id="Mro-JS-iiC"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zmY-wL-o4Y" secondAttribute="bottom" constant="8" id="NeX-Aa-rsb"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zmY-wL-o4Y" secondAttribute="bottom" constant="8" id="OBp-Ts-Dts"/>
+                            <constraint firstItem="zmY-wL-o4Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OSx-6q-H23"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zmY-wL-o4Y" secondAttribute="bottom" constant="8" id="Rgo-6R-tcd"/>
                             <constraint firstItem="zmY-wL-o4Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rkv-u6-kXe"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zmY-wL-o4Y" secondAttribute="bottom" constant="20" id="SmR-qN-MTa"/>
                             <constraint firstItem="zmY-wL-o4Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VgV-Fg-Urg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zmY-wL-o4Y" secondAttribute="bottom" constant="8" id="W6i-FG-zvN"/>
                             <constraint firstItem="iRy-cu-7jv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Y7b-a3-Gj8"/>
                             <constraint firstItem="zmY-wL-o4Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZKN-q1-yZx"/>
                             <constraint firstAttribute="trailing" secondItem="P4r-l5-DwU" secondAttribute="trailing" id="dhE-bh-SBh"/>
                             <constraint firstItem="P4r-l5-DwU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hAK-I8-u0E"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zmY-wL-o4Y" secondAttribute="bottom" constant="8" id="khw-n4-tgt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zmY-wL-o4Y" secondAttribute="bottom" constant="8" id="lOw-Te-QdJ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zmY-wL-o4Y" secondAttribute="bottom" constant="8" id="nP3-bW-JEx"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="P4r-l5-DwU" secondAttribute="bottom" id="tfD-Je-7Xb">
                                 <variation key="heightClass=compact" constant="-130"/>
@@ -311,23 +411,30 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="DvA-S1-Lfc"/>
+                                <exclude reference="FQi-63-MxV"/>
                                 <exclude reference="I3h-fe-VFx"/>
                                 <exclude reference="L9X-44-zLu"/>
                                 <exclude reference="Mro-JS-iiC"/>
                                 <exclude reference="Y7b-a3-Gj8"/>
+                                <exclude reference="0L0-bQ-w6C"/>
                                 <exclude reference="FVX-GH-g1g"/>
+                                <exclude reference="OSx-6q-H23"/>
                                 <exclude reference="Rkv-u6-kXe"/>
                                 <exclude reference="VgV-Fg-Urg"/>
                                 <exclude reference="ZKN-q1-yZx"/>
                                 <exclude reference="x6C-Ka-xd9"/>
                                 <exclude reference="4ZJ-Io-qos"/>
                                 <exclude reference="BT4-xC-pWx"/>
+                                <exclude reference="FOP-DC-nTn"/>
                                 <exclude reference="GtP-sU-9Gd"/>
                                 <exclude reference="NeX-Aa-rsb"/>
                                 <exclude reference="OBp-Ts-Dts"/>
                                 <exclude reference="Rgo-6R-tcd"/>
                                 <exclude reference="SmR-qN-MTa"/>
+                                <exclude reference="W6i-FG-zvN"/>
                                 <exclude reference="khw-n4-tgt"/>
+                                <exclude reference="lOw-Te-QdJ"/>
                                 <exclude reference="nP3-bW-JEx"/>
                             </mask>
                         </variation>
@@ -347,6 +454,12 @@
                                 <include reference="x6C-Ka-xd9"/>
                                 <include reference="BT4-xC-pWx"/>
                                 <include reference="SmR-qN-MTa"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="OSx-6q-H23"/>
+                                <include reference="W6i-FG-zvN"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">
@@ -369,6 +482,15 @@
                                 <include reference="4ZJ-Io-qos"/>
                             </mask>
                         </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="DvA-S1-Lfc"/>
+                                <include reference="FQi-63-MxV"/>
+                                <include reference="0L0-bQ-w6C"/>
+                                <include reference="FOP-DC-nTn"/>
+                                <exclude reference="lOw-Te-QdJ"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="checkItOutButton" destination="zmY-wL-o4Y" id="MwS-Xy-CyW"/>
@@ -376,7 +498,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="540" y="42"/>
+            <point key="canvasLocation" x="527.25" y="39"/>
         </scene>
     </scenes>
     <resources>
