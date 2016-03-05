@@ -9,12 +9,8 @@
 import UIKit
 
 class StartViewController: UIViewController {
-    @IBOutlet weak var checkItOutButton: UIButton!
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        checkItOutButton.layer.cornerRadius = 7.0
     }
 
     override func didReceiveMemoryWarning() {
