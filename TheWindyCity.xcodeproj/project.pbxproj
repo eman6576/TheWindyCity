@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		881A5CE61C8A461F00783D93 /* ChicagoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881A5CE51C8A461F00783D93 /* ChicagoButton.swift */; };
 		883F2E8E1C878947005D98B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883F2E8D1C878947005D98B5 /* AppDelegate.swift */; };
 		883F2E901C878947005D98B5 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883F2E8F1C878947005D98B5 /* StartViewController.swift */; };
 		883F2E931C878947005D98B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 883F2E911C878947005D98B5 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		881A5CE51C8A461F00783D93 /* ChicagoButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChicagoButton.swift; sourceTree = "<group>"; };
 		883F2E8A1C878947005D98B5 /* TheWindyCity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheWindyCity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		883F2E8D1C878947005D98B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		883F2E8F1C878947005D98B5 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		881A5CE71C8A486D00783D93 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				881A5CE51C8A461F00783D93 /* ChicagoButton.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		881A5CE81C8A488300783D93 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				883F2E8F1C878947005D98B5 /* StartViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		883F2E811C878947005D98B5 = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +72,9 @@
 		883F2E8C1C878947005D98B5 /* TheWindyCity */ = {
 			isa = PBXGroup;
 			children = (
+				881A5CE81C8A488300783D93 /* Controllers */,
+				881A5CE71C8A486D00783D93 /* Utilities */,
 				883F2E8D1C878947005D98B5 /* AppDelegate.swift */,
-				883F2E8F1C878947005D98B5 /* StartViewController.swift */,
 				883F2E911C878947005D98B5 /* Main.storyboard */,
 				883F2E941C878947005D98B5 /* Assets.xcassets */,
 				883F2E961C878947005D98B5 /* LaunchScreen.storyboard */,
@@ -136,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				881A5CE61C8A461F00783D93 /* ChicagoButton.swift in Sources */,
 				883F2E901C878947005D98B5 /* StartViewController.swift in Sources */,
 				883F2E8E1C878947005D98B5 /* AppDelegate.swift in Sources */,
 			);
