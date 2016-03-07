@@ -16,7 +16,12 @@ class ChicagoButton: UIButton {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
+        //Set the corner radius and back ground color
         self.layer.cornerRadius = 10.0
+        self.backgroundColor = UIColor.init(colorLiteralRed: 176/255, green: 63/255, blue: 56/255, alpha: 0.95)
+        
+        //Set the text properties
+        self.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
     }
     
 }
