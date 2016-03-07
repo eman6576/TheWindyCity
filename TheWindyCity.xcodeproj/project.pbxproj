@@ -13,6 +13,8 @@
 		883F2E931C878947005D98B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 883F2E911C878947005D98B5 /* Main.storyboard */; };
 		883F2E951C878947005D98B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 883F2E941C878947005D98B5 /* Assets.xcassets */; };
 		883F2E981C878947005D98B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 883F2E961C878947005D98B5 /* LaunchScreen.storyboard */; };
+		88B7E73E1C8E1ABF0013C11D /* AboutChicagoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B7E73D1C8E1ABF0013C11D /* AboutChicagoViewController.swift */; };
+		88B7E7401C8E1AFD0013C11D /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B7E73F1C8E1AFD0013C11D /* PhotosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		883F2E941C878947005D98B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		883F2E971C878947005D98B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		883F2E991C878947005D98B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88B7E73D1C8E1ABF0013C11D /* AboutChicagoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutChicagoViewController.swift; sourceTree = "<group>"; };
+		88B7E73F1C8E1AFD0013C11D /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,8 @@
 		881A5CE81C8A488300783D93 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				88B7E73D1C8E1ABF0013C11D /* AboutChicagoViewController.swift */,
+				88B7E73F1C8E1AFD0013C11D /* PhotosViewController.swift */,
 				883F2E8F1C878947005D98B5 /* StartViewController.swift */,
 			);
 			name = Controllers;
@@ -157,7 +163,9 @@
 			files = (
 				881A5CE61C8A461F00783D93 /* ChicagoButton.swift in Sources */,
 				883F2E901C878947005D98B5 /* StartViewController.swift in Sources */,
+				88B7E73E1C8E1ABF0013C11D /* AboutChicagoViewController.swift in Sources */,
 				883F2E8E1C878947005D98B5 /* AppDelegate.swift in Sources */,
+				88B7E7401C8E1AFD0013C11D /* PhotosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
