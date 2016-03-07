@@ -44,6 +44,9 @@
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="48"/>
                                 </variation>
+                                <connections>
+                                    <segue destination="oNH-OF-L5I" kind="show" id="DxQ-vf-ngE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvx-NH-1BP" customClass="ChicagoButton" customModule="TheWindyCity" customModuleProvider="target">
                                 <rect key="frame" x="178" y="386" width="245" height="72"/>
@@ -68,6 +71,9 @@
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="41"/>
                                 </variation>
+                                <connections>
+                                    <segue destination="Mp7-Jl-aIV" kind="show" id="ozu-Gk-QgA"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DMD-u6-6b0">
                                 <rect key="frame" x="15" y="89" width="140" height="152"/>
@@ -154,10 +160,207 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4N1-XT-jp9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-528" y="-764"/>
+            <point key="canvasLocation" x="-999" y="-424"/>
+        </scene>
+        <!--About Chicago View Controller-->
+        <scene sceneID="Qt9-Hl-qb1">
+            <objects>
+                <viewController id="Mp7-Jl-aIV" customClass="AboutChicagoViewController" customModule="TheWindyCity" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="maq-WE-rzH"/>
+                        <viewControllerLayoutGuide type="bottom" id="bZZ-lE-jGj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3v5-q6-pqc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChicagoSkyline" translatesAutoresizingMaskIntoConstraints="NO" id="ZS8-Oo-fEb">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="182"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="B1q-tr-4Yx"/>
+                                    <constraint firstAttribute="height" constant="182" id="NkF-SA-wdo"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8YQ-4h-XfD">
+                                <rect key="frame" x="20" y="28" width="26" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="26" id="Ixq-0f-eZs"/>
+                                    <constraint firstAttribute="height" constant="29" id="v3F-2p-j3k"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="arrows"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Chicago" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twU-LH-Xvi">
+                                <rect key="frame" x="208" y="73" width="185" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="hXx-mO-OU6"/>
+                                    <constraint firstAttribute="width" constant="185" id="pLY-xa-CJO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="QQX-zZ-Zyh">
+                                <rect key="frame" x="20" y="203" width="560" height="377"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZRF-lP-NzG">
+                                        <rect key="frame" x="0.0" y="0.0" width="108" height="69"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="POPULATION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Osg-VO-4ta">
+                                                <rect key="frame" x="0.0" y="0.0" width="108" height="34"/>
+                                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="17"/>
+                                                <color key="textColor" red="0.68627450980000004" green="0.25098039220000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="108" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="108" height="105"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2,695,598" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v75-jp-1Tn">
+                                                <rect key="frame" x="0.0" y="35" width="108" height="34"/>
+                                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="15"/>
+                                                <color key="textColor" red="0.68627450980000004" green="0.25098039220000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="23" width="108" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="106" width="108" height="105"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="108" height="45"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="108" height="211"/>
+                                        </variation>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="8nZ-u5-pQZ">
+                                        <rect key="frame" x="0.0" y="112" width="560" height="160"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="HISTORY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDp-Wa-MzB">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="23"/>
+                                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="17"/>
+                                                <color key="textColor" red="0.68627450980000004" green="0.25098039220000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="70" height="23"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4N-ip-W72">
+                                                <rect key="frame" x="0.0" y="23" width="560" height="137"/>
+                                                <string key="text">The name "Chicago" is derived from a French rendering of the Native American word shikaakwa, translated by some sources as "wild leek" or "wild onion" or "wild garlic", from the Miami-Illinois language. The first known reference to the site of the current city of Chicago as "Checagou" was by Robert de LaSalle around 1679 in a memoir. Henri Joutel, in his journal of 1688, noted that the wild garlic, called "chicagoua", grew abundantly in the area. Other sources say place of the skunk.</string>
+                                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="15"/>
+                                                <color key="textColor" red="0.68627450980000004" green="0.25098039220000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="widthClass=compact">
+                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="13"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="98" width="360" height="175"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="254" width="356" height="218"/>
+                                        </variation>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Uq4-nK-SW2">
+                                        <rect key="frame" x="0.0" y="315" width="254" height="63"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="THINGS TO DO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Toy-qo-Sqk">
+                                                <rect key="frame" x="0.0" y="0.0" width="124" height="23"/>
+                                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="17"/>
+                                                <color key="textColor" red="0.68627450980000004" green="0.25098039220000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="220" height="17"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="124" height="23"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="1.) Watch the Chicago Cubs " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gct-UR-gyp">
+                                                <rect key="frame" x="0.0" y="23" width="197" height="20"/>
+                                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="15"/>
+                                                <color key="textColor" red="0.68627450980000004" green="0.25098039220000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="13"/>
+                                                    <rect key="frame" x="0.0" y="17" width="220" height="17"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="23" width="197" height="20"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2.) Eat some famous deep dish pizza" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4Y-gF-wd2">
+                                                <rect key="frame" x="0.0" y="43" width="254" height="20"/>
+                                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="15"/>
+                                                <color key="textColor" red="0.68627450980000004" green="0.25098039220000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="13"/>
+                                                    <rect key="frame" x="0.0" y="34" width="220" height="17"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="43" width="254" height="20"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="326" width="220" height="51"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="515" width="254" height="63"/>
+                                        </variation>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8YQ-4h-XfD" firstAttribute="top" secondItem="maq-WE-rzH" secondAttribute="bottom" constant="8" id="1wf-jc-HK1"/>
+                            <constraint firstItem="ZS8-Oo-fEb" firstAttribute="top" secondItem="3v5-q6-pqc" secondAttribute="topMargin" id="67b-b8-5K0"/>
+                            <constraint firstItem="QQX-zZ-Zyh" firstAttribute="top" secondItem="ZS8-Oo-fEb" secondAttribute="bottom" constant="21" id="G5S-lP-Sv3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QQX-zZ-Zyh" secondAttribute="trailing" id="GPT-4f-183"/>
+                            <constraint firstItem="ZS8-Oo-fEb" firstAttribute="leading" secondItem="3v5-q6-pqc" secondAttribute="leadingMargin" constant="-20" id="OAE-OA-y7Z"/>
+                            <constraint firstItem="8YQ-4h-XfD" firstAttribute="leading" secondItem="3v5-q6-pqc" secondAttribute="leadingMargin" id="gSn-dJ-uue"/>
+                            <constraint firstItem="bZZ-lE-jGj" firstAttribute="top" secondItem="QQX-zZ-Zyh" secondAttribute="bottom" constant="20" id="lD1-fU-oJM"/>
+                            <constraint firstItem="twU-LH-Xvi" firstAttribute="centerX" secondItem="3v5-q6-pqc" secondAttribute="centerX" id="nAw-yf-lrD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZS8-Oo-fEb" secondAttribute="trailing" constant="-20" id="rzJ-sn-KmD"/>
+                            <constraint firstItem="QQX-zZ-Zyh" firstAttribute="leading" secondItem="3v5-q6-pqc" secondAttribute="leadingMargin" id="uwu-l3-JI3"/>
+                            <constraint firstItem="twU-LH-Xvi" firstAttribute="top" secondItem="maq-WE-rzH" secondAttribute="bottom" constant="53" id="xRR-7H-ala"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IL6-vQ-h5l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-231" y="-803"/>
+        </scene>
+        <!--Photos View Controller-->
+        <scene sceneID="rbd-P6-T5c">
+            <objects>
+                <viewController id="oNH-OF-L5I" customClass="PhotosViewController" customModule="TheWindyCity" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="V1d-4W-xKD"/>
+                        <viewControllerLayoutGuide type="bottom" id="a1f-j7-qCj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YxW-DG-Jtn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aFP-uM-LuU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-231" y="-16"/>
         </scene>
     </scenes>
     <resources>
+        <image name="ChicagoSkyline" width="1920" height="799"/>
+        <image name="arrows" width="32" height="32"/>
         <image name="compass" width="35" height="35"/>
         <image name="menubackground" width="2849" height="3768"/>
     </resources>
